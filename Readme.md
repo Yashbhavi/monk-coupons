@@ -166,6 +166,8 @@
 
 ### Create Coupon (Cart-Wise)
 
+
+```json
 {
   "code": "CART10",
   "name": "10% Off on Carts above ₹100",
@@ -178,8 +180,11 @@
   "expiresAt": "2025-12-31T23:59:59.000Z",
   "usageLimit": 100
 }
+```
 
-### Apply Coupon
+ ### 🛒 Apply Coupon
+
+```json
 {
   "cart": {
     "items": [
@@ -189,8 +194,11 @@
     ]
   }
 }
+```
+
 
 ### 🧾 Example Response
+```json
 {
   "applied": true,
   "result": {
@@ -207,16 +215,18 @@
     }
   }
 }
+```
+
 
 ## 🧪 Testing
 
-Includes test cases for:
+### Includes test cases for:
 
-Coupon creation
+- Coupon creation
 
-Applicability evaluation
+- Applicability evaluation
 
-Discount calculation logic
+- Discount calculation logic
 
 ## Run:
 
@@ -267,12 +277,12 @@ src/
 
 ## 🏁 Conclusion
 
-✅ This API fully satisfies the Monk Commerce 2025 backend task requirements:
+- This API fully satisfies the Monk Commerce 2025 backend task requirements:
 
-Complete CRUD for coupon management
+- Complete CRUD for coupon management
 
-Core logic for cart-wise, product-wise, and BxGy discounts
+- Core logic for cart-wise, product-wise, and BxGy discounts
 
-Well-defined extensible architecture
+- Well-defined extensible architecture
 
-Clean code, modular design, and documented assumptions
+- Clean code, modular design, and documented assumptions
